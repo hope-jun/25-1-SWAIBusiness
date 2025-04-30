@@ -1163,7 +1163,7 @@ html {
 .faq_header {
   padding: 20px 25px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   background: #ffffff;
   color: #333;
@@ -1177,7 +1177,7 @@ html {
 
 .faq_body {
   padding: 20px 25px;
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
   background-color: #fcfcfc;
   border-top: 1px solid #e0f0e7;
@@ -1186,7 +1186,7 @@ html {
 
 .faq_arrow {
   float: right;
-  font-size: 18px;
+  font-size: 16px;
   transition: transform 0.3s;
 }
 
