@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>건강한 사람들의 배달앱, Healivery</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- axios CDN을 HTML에 추가 -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- loading busy -->
+  <script src="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.css" rel="stylesheet">
+
+  <!-- pop up -->
+  <script src="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/dinoqqq/simple-popup@master/dist/jquery.simple-popup.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/healivery_logo4.png" alt="" style = "width:100px;"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutUs"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Join Our App </a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="">
+                <img src="images/user.png" alt="">
+                <span>
+                  Login
+                </span>
+              </a>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="custom_menu-btn ">
+              <button>
+                <span class=" s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="play_btn">
+        <a href="#aboutUs">
+          <img src="images/play.png" alt="">
+        </a>
+      </div>
+      <div class="number_box">
+        <div>
+          <ol class="carousel-indicators indicator-2">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          </ol>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="font-size: 23px; text-indent: 15px;">
+                        건강한 사람들의 새로운 배달앱
+                      <span class="logo-wrapper">
+                        <img src="images/healivery_logo4.png" alt="YONSEI 로고" style="height: auto; max-height: 100px; width: auto; max-width: 80vw; vertical-align: middle;">
+                      </span>
+                    </h1>
+                    <p style="font-size: 18px; margin-left: 15px; font-weight: 400;">
+                      후기만 보고 고르던 배달음식,<br>
+                      이제는 '내 몸에 맞는지'까지 생각할 때예요.<br>
+                      <span style="font-weight: 400 ; font-size: 23px; font-weight: 700;">
+                        <span style="color: #1ED877;">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span>가, 영양정보도 메뉴 추천도 챙겨드릴게요.
+                      </span>                 
+                    </p>
+                    <div class="btn-box">
+                      <a href="#aboutUs" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="#contact" class="btn-2">
+                        Join Our App
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="images/app_main2.png" alt="" style="width: 200px; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="font-size: 23px; text-indent: 15px;">
+                        건강한 사람들의 새로운 배달앱
+                      <span class="logo-wrapper">
+                        <img src="images/healivery_logo4.png" alt="YONSEI 로고" style="height: auto; max-height: 100px; width: auto; max-width: 80vw; vertical-align: middle;">
+                      </span>
+                    </h1>
+                    <p style="font-size: 18px; margin-left: 15px; font-weight: 400;">
+                      후기만 보고 고르던 배달음식,<br>
+                      이제는 '내 몸에 맞는지'까지 생각할 때예요.<br>
+                      <span style="font-weight: 400 ; font-size: 23px; font-weight: 700;">
+                        <span style="color: #1ED877;">[ 힐리버리 ]</span>가, 영양정보도 메뉴 추천도 챙겨드릴게요.
+                      </span>                 
+                    </p>
+                    <div class="btn-box">
+                      <a href="#aboutUs" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="#contact" class="btn-2">
+                        Join Our App
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="images/app_main2.png" alt="" style="width: 200px; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- Intro-1 section -->
+
+  <section id="aboutUs" class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span style="font-weight: 700; color: #1ED877;">Healivery</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <p style="font-size: 17px; margin-left: 0px; font-weight: 400; line-height: 1.6;">
+              <span style="font-size: 20px; font-weight: 700;">
+                많은 음식, 빠른 배달.<br></span>
+                지금까지의 배달앱은 정말 편했지만,<br>
+                영양정보를 확인하는 건 여전히 어려웠죠.<br><br><br>
+
+              그래서 준비했어요.<br>
+              <span style="font-size: 20px; font-weight: 700;"><span style="color: #1ED877;"> '힐리버리(Healivery)'</span>는<br>
+              메뉴 고를 때부터<br>
+              <span style="background: #dbf6e8;"> 영양정보를 한눈에 비교하고,<br>
+              나에게 맞는 식단까지 추천해주는 배달 서비스</span>예요.<br></span>
+              건강한 선택이 더 쉽고 자연스러워집니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <div class="img-box">
+            <img src="images/intro1.png" alt=""style="width: 100%; max-width: 500px; height: auto;">
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="img-box">
+            <img src="images/intro2.png" alt=""style="width: 100%; max-width: 500px; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end intro-1 section -->
+
+  <!-- discount section -->
+
+  <section class="discount_section layout_padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="img-box text-center">
+            <img src="images/데모_2.png" alt="" style="width: 270px; height: auto;">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2 style="font-size: 22px; font-weight: 600; line-height: 1.6; padding-left: 0; margin-right: 30px; margin-top: 20px; text-align: left; margin-bottom: 20px;">
+              하루 한 끼쯤은 배달앱으로 툭, <br>시켜 먹는 시대
+            </h2>
+            <h2 class="main_heading" style="font-size: 40px; font-weight: 700; line-height: 1.4;">
+              <span style="color: #1ED877;">‘맛’도 중요하지만,</span><br>
+              <span style="background:#dfeeea;">[ 건강도 함께 ]</span>
+            </h2>
+            <div style="margin-top: 30px;">
+              <a href="#contact">
+                JOIN OUR APP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end discount section -->
+
+<!-- feature section -->
+
+<section id="aboutUs" class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>
+              <span style="font-weight: 700; color: #1ED877;">Healivery,</span> <span style="font-size: 28px;font-weight: 600;">이렇게 달라요</span>
+            </h2>
+
+          </div>
+          <p style="font-size: 17px; margin-left: 0px; font-weight: 400; line-height: 1.6;">
+            <span style="font-weight: 700; font-size: 22px; background: #dbf6e8;">
+            많은 음식, 빠른 배달.<br>
+            이제는 건강까지 챙길 시간!<br></span>
+            Healivery(힐리버리)는 영양정보가 보이는 배달앱이에요.<br>
+            내 몸에 맞는 식단, 지금 바로 기능부터 살펴보세요.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mb-4">
+        <div class="img-box text-center">
+          <img src="images/기능1.png" alt="기능1" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px;">
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <div class="img-box text-center">
+          <img src="images/기능2.png" alt="기능2" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px;">
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <div class="img-box text-center">
+          <img src="images/기능3.png" alt="기능3" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px;">
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <div class="img-box text-center">
+          <img src="images/기능4.png" alt="기능4" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end feature section -->
+
+<!-- client section -->
+<section class="client_section">
+  <div class="container">
+    <div class="heading_container">
+      <h2><span style="font-weight: 600; font-size:28px;">우리가 만난</span> <span style="font-weight: 700; color: #1ED877;">사람들</span>
+      </h2>
+    </div>
+    <p style="font-size: 17px; margin-left: 0px; font-weight: 400; line-height: 1.6;">
+        힐리버리를 이용하는 사람들,<br>
+        과연 어떤 건강한 선택을 하고 있을까요?<br>
+        <span style="font-weight: 700; font-size: 17px; color: #1ED877;">
+        지금부터, 힐리버리 유저들의 리얼 스토리를 만나보세요.</span>
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="client_container layout_padding2">
+      
+      <!-- Persona 1 -->
+      <div class="client_box b-1">
+        <div class="client-id">
+          <div class="img-box">
+            <img src="images/persona-1.png" alt="" style="width: 150px; height: auto;" />
+          </div>
+          <div class="name">
+            <h5>Jung-woong</h5>
+            <p style="font-size:13px;">20대 초반 / 자취 / 헬스 매니아</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p style="font-weight: 400; font-size: 16px; line-height: 1.7;">
+            헬스를 좋아하는 대학생 자취생이에요.<br>
+            평소에 운동 후에 단백질을 챙겨먹는 것을 중요하게 생각하고<br>
+            영양 성분을 자주 확인하는 편이에요.<br><br>
+            <strong style="color: #1ED877;">힐리버리의 영양정보 시각화와 <br>고단백 필터링</strong>은<br>
+            제가 원하는 식사를 쉽게 고를 수 있게 도와주는 것 같아요.
+          </p>
+        </div>
+      </div>
+
+      <!-- Persona 2 -->
+      <div class="client_box b-2">
+        <div class="client-id">
+          <div class="img-box">
+            <img src="images/persona-2.png" alt="" style="width: 150px; height: auto;" />
+          </div>
+          <div class="name">
+            <h5>Yu-jin</h5>
+            <p style="font-size:13px;">30대 초반 / 엄격한 비건 / 다이어터</p>
+          </div>
+        </div>
+        <div class="detail">
+          <p style="font-weight: 400; font-size: 16px; line-height: 1.7;">
+            저는 철저한 비건 식단과 칼로리 제한을 실천하고 있어요.<br>
+            일반 배달앱에선 음식 정보를 확인하기 어렵고<br>
+            원하는 메뉴를 찾기까지 너무 시간이 걸립니다.<br><br>
+            <strong style="color: #1ED877;">힐리버리의 비건 / 저열량 필터</strong> 덕분에<br>
+            제 식단에 맞는 음식을 빠르게 찾을 수 있어요.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ section -->
+<section class="trending_section layout_padding">
+  <div id="accordion">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> <!-- ✅ col-md-6 → col-md-12 로 변경 -->
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>FAQ</h2>
+            </div>
+            <!-- ✅ 제목과 FAQ 사이 여백 추가 -->
+            <div class="faq_container mt-5"> <!-- mt-4 = margin-top: 1.5rem -->
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqSix" aria-expanded="false" aria-controls="faqOne">
+                  <h5 class="mb-0">💬 왜 이런 서비스를 만들게 되었나요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqSix" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    코로나19 이후 배달음식이 일상이 되었지만,<br>
+                    막상 건강이나 영양정보까지 챙기긴 너무 어렵다는 걸 느꼈어요.<br><br>
+                    
+                    기존 배달앱은 정말 편리하지만, <span style="font-weight: 600; background:#dfeeea;">   칼로리나 나트륨, 당류 같은 핵심 영양정보는 <br>
+                    구석에 숨어 있어 잘 보이지 않거나 아예 없고,<br>
+                    채식·다이어트·혈당관리 등 식습관을 가진 사람들에겐 맞는 메뉴를 찾기도 어렵죠.</span><br>
+                    특히 건강을 챙기거나, 채식 같은 식습관이 있는 사람들은 뭘 시켜야 할지 고민만 길어지고요.<br><br>
+                    
+                    그래서 '내 몸에 맞는 배달음식, 한눈에 골라보면 안 될까?' 하는 고민에서 출발했습니다.<br>
+
+                    <span style="font-weight: 600; background:#dfeeea;"> 1인 가구처럼 배달로 한 끼 해결하는 사람들을 위해,<br>
+                    내 기준에 맞는 메뉴를 쉽게 찾고, 영양까지 챙길 수 있는 배달앱을 만들어봤어요.</span><br><br>
+                    
+                    <span style="font-size:18px;font-weight: 600; color: #1ED877;">힐리버리는 단순한 배달이 아니라,<br>
+                    매 끼니의 건강까지 함께 고민하는 앱이에요.<br></span>
+                    <strong>기존 배달앱을 완전히 바꾸는 건 아니고,
+                    건강을 우선하는 사람들만을 위한 똑똑한 서브앱, 시작해보려 해요.</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                  <h5 class="mb-0">💬 기존 배달앱과는 어떤 점이 다른가요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqOne" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    배달의민족, 요기요 등 대부분의 배달앱은 <strong>영양정보를 직관적으로 보여주지 않아요.</strong><br>
+                    일반적으로 메뉴만 보여주고, 칼로리나 영양정보는 구석에 작게 표기하거나 아예 없는 경우도 많아요.<br>
+                    채식 중심의 앱은 있지만, 메뉴가 한정적이고 기준도 애매한 경우가 많죠.<br><br>
+                    <span style="font-weight: 600; color: #1ED877;">힐리버리(Healivery)</span>는<br>
+                    배달의 편리함은 그대로, 거기에 <strong>직관적이고 통일된 영양정보(열량, 단백질량 등)를 제공하고<br>
+                    내 몸에 맞는 식단과 메뉴 선택</strong>까지 챙겨주는 서비스예요.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqFive" aria-expanded="false" aria-controls="faqOne">
+                  <h5 class="mb-0">💬 다이어트 중인데… 저에게 맞는 식단도 추천해주나요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqFive" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    네, 가능해요! <br><br>
+                    
+                   <span style="font-weight: 600; color: #1ED877;">힐리버리</span>는 당일 섭취 영양소 기반으로 저녁 메뉴를 추천하거나,
+                    운동 목표나 다이어트 목적에 따라 고단백/저칼로리 식단을 골라주는<br>
+                    <span style="font-weight: 600; color: #1ED877;">챗봇형태의 AI 기반 추천 기능(LLM 서비스)</span>를 제공할 예정이에요.<br><br>
+
+                    <strong><span style="background:#dfeeea;"> 자유롭게 챗봇에게 오늘 먹은 음식이나 기분, 추구하고 싶은 식단의 종류를 입력해보세요!<br></span></strong>
+                    오늘 섭취한 칼로리 및 영양 균형 상태 등을 <br>
+                    사용자 정보와 기록을 바탕으로 매일 조금 더 건강한 선택을 도와드릴게요.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  <h5 class="mb-0">💬 채식, 고단백 등 건강 관련 음식만 취급하나요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    전혀요!<br><br>
+                    일반적인 배달앱처럼 다양한 메뉴가 준비되어 있고요,<br>
+                    <span style="font-weight: 600; color: #1ED877;">칼로리, 당류, 나트륨 등의 영양정보를 한눈에</span> 확인할 수 있어요.<br><br>
+                    특별한 식단이 아니더라도, <strong>배달음식을 먹을 때 건강을 챙기고 싶은 누구나</strong> 쉽게 선택할 수 있도록 도와드려요.<br>
+                    건강하고 꾸준한 식습관, 힐리버리가 함께할게요.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  <h5 class="mb-0">💬 서비스 런칭은 어느 정도 진행됐나요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    현재는 <strong>사용자 테스트 및 기능구현 준비 중</strong>이에요.<br><br>
+                    힐리버리는 연세대학교 <strong>[SW·AI 비즈니스 응용설계] 과목</strong>을 통해 진행 중인 프로젝트입니다.<br><br>
+                    구체적인 출시 일정이 궁금하시다면, 아래의 <strong style="font-weight: 600; color: #1ED877;">Join Our App</strong>에서 메일을 남겨주세요.<br>
+                    가장 먼저 소식을 전해드릴게요!
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="card faq_card mb-4">
+                <div class="card-header faq_header collapsed" data-toggle="collapse" data-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                  <h5 class="mb-0">💬 첫 주문 무료 혜택은 어떻게 받을 수 있나요? <span class="faq_arrow">▼</span></h5>
+                </div>
+                <div id="faqFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body faq_body">
+                    사전등록하신 분들 중 앱 런칭 이후,<br>
+                    <strong style="font-weight: 600; color: #1ED877;">15,000원 이하의 첫 주문 건에 대해 무료 혜택</strong>을 제공할 예정이에요.<br><br>
+                    확정된 내용은 메일로 안내드릴 예정이니, 사전등록 신청을 꼭 해주세요!
+                  </div>
+                </div>
+              </div>
+
+              <!-- 추가 질문은 여기에 복사해서 추가하면 됨 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end FAQ section -->
+
+  <!-- contact section -->
+
+  <section id="contact" class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2 class="">
+          Join Our App
+        </h2>
+      </div>
+      <p style="font-size: 19px; line-height: 1.6; font-weight:600;">
+        🎁 지금 <strong style="color: #1ed877; font-weight:600;">사전등록</strong>하면 첫 주문 무료!<br>
+        🚀 <strong style="color: #1ed877; font-weight:600;">알림신청</strong>하면 런칭 소식을 가장 먼저 받아보실 수 있어요.
+      </p>      
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group" style="margin-top: 20px;">
+              <label for="submit-role" style="display: block; margin-bottom: 10px; font-weight: 200; font-size: 18px; ">
+                1. 사전등록 / 알림신청
+              </label>
+              <select id="submit-role" style="width: 100%; height: 50px; padding-left: 15px; border-radius: 10px; border: 1px solid #ccc; background-color: #fff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); color: #333;">
+                <option value="" disabled selected hidden>선택해주세요</option>
+                <option value="대학생">사전등록</option>
+                <option value="직장인">알림신청</option>
+                <option value="기타">의견만 보내기</option>
+              </select>
+            </div>
+            <p style="font-weight: 200; font-size: 18px;">
+              2. 이메일을 남겨주시면 서비스가 런칭될 때 가장 먼저 알려드릴게요.
+            </p>
+            <div>
+              <input id="submit-email" type="email" class="form-control" placeholder="Email" />
+            </div>
+            <p style="font-weight: 200; font-size: 18px;">
+              3. 서비스에 대한 소중한 조언을 자유롭게 남겨주세요.
+            </p>
+            <div>
+              <textarea id="submit-advice" class="form-control" rows="7" placeholder="Advice"></textarea>            </div>
+            <div class="d-flex ">
+              <button type="button" id="submit">
+                제출하기 SEND
+              </button>
+            </div>
+          </form>
+          <div id="popup" style="display:none; text-align: center; margin-top: 20px;">
+            <h1>제출 완료!</h1>
+            <p>저희 서비스에 관심 가져주셔서 감사합니다. <br>서비스 런칭소식을 가장 먼저 메일로 알려드릴게요.</p>
+          </div>
+          <div id="error-popup" style="display: none; text-align: center; margin-top: 20px;">
+            <h1>입력 오류</h1>
+            <p>올바른 이메일 주소를 입력해주세요.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12650.076260280774!2d126.9284068698099!3d37.56639325261514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c988ea13e280f%3A0xb7b75243ec5a638e!2z7Jew7IS464yA7ZWZ6rWQIOyLoOy0jOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1745304619431!5m2!1sko!2skr" 
+              width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+              allowfullscree></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+ <!-- info section -->
+<section class="info_section layout_padding2" style="background-color: #101010; color: #ffffff; font-weight: 300;">
+  <div class="container">
+    <div class="info_logo text-center mb-4">
+      <img src="images/healivery_logo4.png" alt="" width="150px">
+    </div>
+    <div class="row">
+
+      <!-- Contact Info -->
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="info_contact">
+          <h5 style="font-weight: 600;">📍 About Me</h5>
+          <div class="d-flex align-items-start mb-2">
+            <img src="images/location-white.png" width="18px" class="mr-2" alt="">
+            <p class="mb-0">서울특별시 서대문구 연세로 50<br>연세대학교 컴퓨터과학과</p>
+          </div>
+          <div class="d-flex align-items-start mb-2">
+            <img src="images/telephone-white.png" width="12px" class="mr-2" alt="">
+            <p class="mb-0">+82 010-8316-3830</p>
+          </div>
+          <div class="d-flex align-items-start">
+            <img src="images/envelope-white.png" width="18px" class="mr-2" alt="">
+            <p class="mb-0">jhmharry@yonsei.ac.kr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Healivery -->
+      <div class="col-md-4 col-lg-5 mb-4">
+        <div class="info_info">
+          <h5 style="font-weight: 600;">💡 Who I Am</h5>
+          <p style="line-height: 1.7;">
+            안녕하세요, 현재 연세대학교 컴퓨터과학과에서 공부 중인 [ 전희망 ]입니다.<br>
+            사람과 기술의 상호작용, 그리고 더 나은 사용 경험(UX)에 관심이 많아요.<br>
+            Healivery는 그 고민에서 시작된 건강한 사람들을 위한 배달 플랫폼입니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="info_form">
+          <h5 style="font-weight: 600;">📬 Newsletter</h5>
+          <form action="">
+            <input type="email" placeholder="이메일을 입력해주세요" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+            <button style="background-color: #1ED877; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; width: 100%;">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"> </script>
+
+  <script type="application/javascript">
+    var ip = "null";
+    function getIP(json) {
+        console.log(json);
+        try {
+        ip = json.ip;
+        } catch (e) {
+        ip = 'unknown';
+        }
+        return;
+    }
+    </script>
+  
+    <script type="application/javascript" src="https://jsonip.com?format=jsonp&callback=getIP"></script>
+
+  <script>
+     // time stamp를 가져오기 위한 script
+     // Sam pading value to start with 0. eg: 01, 02, .. 09, 10, ..
+    function padValue(value) {
+      return (value < 10) ? "0" + value : value;
+    }
+
+    function getTimeStamp() {
+      const date = new Date();
+
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const seconds = date.getSeconds();
+
+      const formattedDate = `${padValue(year)}-${padValue(month)}-${padValue(day)} ${padValue(hours)}:${padValue(minutes)}:${padValue(seconds)}`;
+
+      return formattedDate;
+    }
+  </script>
+
+  <script>
+        // 어떤 사람이 얼마나 방문을 하고 무엇을 했는지 tracking 하기 위한 script라고 볼 수 있음
+        // 각 user 별로 일관된 cookie 내 hash 정보를 갖음
+				// 쿠키에서 값을 가져오는 함수
+				function getCookieValue(name) {
+					const value = "; " + document.cookie;
+					const parts = value.split("; " + name + "=");
+					if (parts.length === 2) {
+						return parts.pop().split(";").shift();
+					}
+				}
+
+				// 쿠키에 값을 저장하는 함수
+				function setCookieValue(name, value, days) {
+					let expires = "";
+					if (days) {
+						const date = new Date();
+						date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+						expires = "; expires=" + date.toUTCString();
+					}
+					document.cookie = name + "=" + (value || "") + expires + "; path=/";
+				}
+
+				function getUVfromCookie() {
+					// 6자리 임의의 문자열 생성
+					const hash = Math.random().toString(36).substring(2, 8).toUpperCase();
+					// 쿠키에서 기존 해시 값을 가져옴
+					const existingHash = getCookieValue("user");
+					// 기존 해시 값이 없으면, 새로운 해시 값을 쿠키에 저장
+					if (!existingHash) {
+						setCookieValue("user", hash, 180); // 쿠키 만료일은 6개월 
+						return hash;
+					} else {
+						// 기존 해시 값이 있으면, 기존 값을 반환
+						return existingHash;
+					}
+				}
+
+				/* 수정 payload data -> id:getUVfromCookie() */
+  </script>
+
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        420: {
+          items: 2
+        },
+        1000: {
+          items: 5
+        }
+      }
+
+    });
+  </script>
+  <script>
+    var nav = $("#navbarSupportedContent");
+    var btn = $(".custom_menu-btn");
+    btn.click
+    btn.click(function (e) {
+
+      e.preventDefault();
+      nav.toggleClass("lg_nav-toggle");
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    });
+  </script>
+  <script>
+    $('.carousel').on('slid.bs.carousel', function () {
+      $(".indicator-2 li").removeClass("active");
+      indicators = $(".carousel-indicators li.active").data("slide-to");
+      a = $(".indicator-2").find("[data-slide-to='" + indicators + "']").addClass("active");
+      console.log(indicators);
+
+    })
+  </script>
+  
+  <script>
+    // UTM 가져오기
+    var queryString = location.search;
+				const urlParams = new URLSearchParams(queryString);
+				const utm = urlParams.get("utm")
+    
+    // Device 정보 가져오기
+    var mobile = 'desktop';
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // true for mobile device
+      mobile = 'mobile';
+    }
+    
+    /* data를 만들 땐 모든 field가 들어 있어야 함 */
+    // Backend DB에 적을 data를 만드는 코드 부분
+    var data = JSON.stringify(
+      {"id":  getUVfromCookie(),
+      "landingUrl": window.location.href, 
+      "ip": ip, 
+      "referer":document.referrer,
+      "time_stamp":getTimeStamp(), 
+      "utm": utm,
+      "device": mobile}
+      );
+
+    $(document).ready(function () {
+
+    const addrScript = 'https://script.google.com/macros/s/AKfycbyYp8a8XBPQR5rBk6PxtsMwXgalNkQGYyTDGQ-1NmR5YN-xpDo5ad0i4ytGj-6a5mcP0g/exec';
+
+    $("#submit").on("click", function () {
+      console.log("submit 버튼 클릭됨");
+      console.log("utm 값:", utm);
+      $.busyLoadFull("show");
+      const role = $("#submit-role").val();
+      const email = $("#submit-email").val();
+      const advice = $("#submit-advice").val();
+    
+      function validateEmail(email) {
+          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+          return re.test(email);
+      }
+    
+      if (email == '' || !validateEmail(email)) {
+          $.busyLoadFull("hide");
+          $.fn.simplePopup({ type: "html", htmlSelector: "#error-popup" });
+          //alert("이메일이 유효하지 않아 알림을 드릴 수가 없습니다.");
+          return;
+      }
+    
+      var finalData = JSON.stringify({
+          "id": getUVfromCookie(),
+          "email": email,
+          "advice": advice,
+          "role": role,
+          "utm": utm
+      })
+    
+      axios.get(addrScript+'?action=insert&table=tab_final&data=' + finalData)
+        .then(response => {
+          console.log(response.data.data);
+          $.busyLoadFull("hide");
+          $.fn.simplePopup({ type: "html", htmlSelector: "#popup" });
+          //alert(JSON.stringify(response));
+          $('#submit-email').val('');
+          $('#submit-advice').val('');
+          $('#submit-role').val('');
+        })
+    });
+    axios.get(addrScript+'?action=insert&table=visitors&data='+data)
+    .then(response => {
+      console.log(JSON.stringify(response));
+    })
+    .catch(error => {
+      if (error.response) {
+        // 서버가 2xx 범위를 벗어난 상태 코드로 응답한 경우
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else if (error.request) {
+        // 요청이 전송되었지만 응답을 받지 못한 경우
+        console.log(error.request);
+      } else {
+        // 요청 설정 중에 오류가 발생한 경우
+        console.log('Error', error.message);
+      }
+      console.log(error.config);
+    });
+    })
+  
+      
+  </script>
+
+</body>
+
+</html>
+
